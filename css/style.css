@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap');
+*{
+    font-family: 'Oswald', serif;
+}
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, video, audio {
+    margin: 0;
+    padding: 0;
+}
+
+/* Primary Navigation Bar */
+.primary-nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.nav-logo img {
+    max-width: 100px; /* Adjust as needed */
+}
+
+.nav-buttons a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.btn{
+    background-color: rgb(3, 163, 70); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.btn:hover{
+    background-color:  rgb(3, 77, 24);
+}
+/* Secondary Navigation Bar */
+.secondary-nav {
+    background-color: rgb(33, 139, 4);
+    padding: 10px;
+}
+
+.secondary-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.secondary-nav li {
+    margin: 0 20px;
+}
+
+.secondary-nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.secondary-nav a:hover{
+    color: #fff;
+}
+
+/* Banner Image */
+.banner {
+    background-image: url('../images/banner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 120px 0;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.banner h1,
+.banner p {
+    opacity: 0; /* Start with zero opacity (invisible) */
+    animation: fadeIn 1.5s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* At the beginning (0%), the element is invisible */
+    }
+    100% {
+        opacity: 1; /* At the end (100%), the element is fully visible */
+    }
+}
+.shop-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(3, 163, 70);
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* Center the search bar */
+.search-bar {
+    text-align: center;
+    margin: 20px auto;
+    width: 40%;
+}
+
+/* Style the search input */
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style the search button */
+#search-button {
+    padding: 10px 20px;
+    background-color: #FF5733; /* Choose your preferred button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px; /* Add some spacing between input and button */
+}
+
+/* Add hover effect for the button */
+#search-button:hover {
+    background-color: #FF4500; /* Change the color on hover */
+}
+
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.about-video img {
+    max-width: 100%;
+}
+
+.about-description {
+    flex-grow: 1;
+    padding-left: 20px;
+    max-width: 600px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.about-description p {
+    margin-bottom: 20px;
+}
+
+.about-description audio {
+    max-width: 100%;
+}
+/* Footer */
+.footer {
+    background-color: rgb(33, 139, 4);
+    color: #000;
+    padding: 12px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #000;
+    text-decoration: none;
+}
+.footer-column a:hover {
+    color: white;
+}
+/* Main Footer */
+.main-footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    padding: 20px 0;
+    font-size: 16px;
+}
+/* Contact Page Heading */
+.contact-heading {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contact Page Content Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Left Column: Stadium Map */
+.left-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Right Column: Contact Form */
+.right-column {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.contact-social {
+    text-align: left;
+}
+.contact-social a{
+    text-decoration: none;
+    color: black;
+}
+.contact-info {
+    text-align: right;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #F7C903;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e3c440;
+}
+
+/* Shop Grid Styles */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Product Styles */
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-details {
+    text-align: center;
+}
+.product-details a{
+    text-decoration: none;
+}
+.product h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: rgb(3, 163, 70);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #0b9c3b;
+}
+
+/*Blog*/
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.blog-post {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 1400px;
+}
+.blog-image {
+    width: 30%;
+    height: auto;
+}
+.blog-info {
+    font-size: 0.9em;
+    color: #777;
+}
+.blog-title {
+    color: #333;
+    margin: 10px 0;
+}
+.blog-desc {
+    color: #666;
+    line-height: 1.6;
+}
+.read-more {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.cart-container {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.remove-btn {
+    padding: 5px 10px;
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+}
+
+.checkout-container {
+    overflow: hidden;
+}
+/* Responsive Design for Tablets and Mobile Phones */
+@media only screen and (max-width: 768px) {
+    .primary-nav, .secondary-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-buttons a {
+        margin: 5px 0;
+    }
+
+    .banner {
+        padding: 80px 0;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .banner p {
+        font-size: 20px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-description {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .blog-container {
+        padding: 0 10px;
+    }
+
+    .blog-post {
+        padding: 10px;
+    }
+
+    .blog-image {
+        width: 100%;
+    }
+}
+
+/* Responsive Design for Mobile Phones */
+@media only screen and (max-width: 480px) {
+    .nav-logo img {
+        max-width: 80px; /* Adjust as needed */
+    }
+
+    .primary-nav, .secondary-nav {
+        padding: 10px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .search-bar {
+        width: 80%;
+    }
+
+    .about-us {
+        padding: 30px 10px;
+    }
+
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product h2 {
+        font-size: 18px;
+    }
+
+    .footer-grid {
+        gap: 5px;
+    }
+
+    .contact-grid {
+        padding: 10px;
+    }
+}
